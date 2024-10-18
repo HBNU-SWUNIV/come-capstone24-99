@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classification Result</title>
+</head>
+<body>
+    <h1>진단 결과: {{ label }}</h1>
+    <img src="{{ url_for('uploaded_file', filename=file_path) }}" alt="Uploaded Image" style="width:300px;">
+    <a href="/">Upload another image</a>
+</body>
+</html>
